@@ -6,17 +6,19 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class DescriptionActivity extends AppCompatActivity {
-int ImageID;
-String Description;
-TextView Text;
-ImageView image;
+private int ImageID;
+private String Description;
+private TextView Text;
+private ImageView image;
+private String Title;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_description);
         Description=getIntent().getStringExtra("desc");
+        Title=getIntent().getStringExtra("title");
         ImageID=getIntent().getIntExtra("1",0);
-
+        setTitle(Title);
         image=findViewById(R.id.headImage);
         image.setImageResource(ImageID);
 

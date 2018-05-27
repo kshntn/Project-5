@@ -20,6 +20,7 @@ public class AttractionsFragment extends Fragment {
 
 private String Description;
 private int ImageId;
+private String Title;
     public AttractionsFragment() {
         // Required empty public constructor
     }
@@ -42,7 +43,9 @@ private int ImageId;
                 Details pos=DetailsList.get(i);
                 Description=pos.getmDescription();
                 ImageId=pos.getmImageId();
+                Title=pos.getmName();
                 Intent next =new Intent(getActivity(),DescriptionActivity.class);
+                next.putExtra("title",Title);
                 next.putExtra("desc", Description);
                 next.putExtra("1", ImageId);
                 startActivity(next);

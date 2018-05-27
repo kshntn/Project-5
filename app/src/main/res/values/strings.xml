@@ -7,5 +7,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="Attractions">Attractions</string>
     <string name="Restaurants">Restaurants</string>
+    <string name="map"><u>MAP</u></string>
+    <string name="visit"><u>VISIT</u></string>
     <string name="title_activity_description">DescriptionActivity</string>
 </resources>
