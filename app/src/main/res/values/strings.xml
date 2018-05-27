@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">TourGuide</string>
     <string name="desription">New Delhi</string>
-    <string name="Details">National Capital Territory of Delhi \nCountry: India \nLanguages: English,Hindi \nAverage Temperature: 30\u2103</string>
+    <string name="Details">National capital state, New Delhi has got the spell to charm locals and travelers alike. Heritage lovers have Humayun’s Tomb, Qutub Complex, Old Fort, Red Fort and other historic marvels carved by the mahajarajas. Shopaholics have a real reason to loosen the pockets; Palika, Sarojini Nagar, GK, Karol Bagh, Lajpat Nagar and Old Delhi. Delhi’s Akshardham, India Gate, Supreme Court, Lotus Temple and Jama Masjid have set a new parameter in the brilliance of architecture.\n\nDelhi is fit for budget travelers, luxury travelers, kids and solo backpackers; there are a dozen of things meant for every other person who comes over.\nDelhi is also called \"Dilli Dilwalon ki\" meaning Delhi belongs to the large-hearted.\n</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
