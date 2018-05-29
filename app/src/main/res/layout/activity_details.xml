@@ -9,7 +9,9 @@
         android:id="@+id/tabs"
         style="@style/CategoryTab"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        app:tabMinWidth="0dp"
+        app:tabMode="scrollable"/>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"

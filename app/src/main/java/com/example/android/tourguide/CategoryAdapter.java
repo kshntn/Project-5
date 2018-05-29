@@ -19,20 +19,28 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         if (position == 0)
             return mContext.getString(R.string.Attractions);
-        else
+        else if(position==1)
             return mContext.getString(R.string.Restaurants);
+        else if(position==2)
+            return mContext.getString(R.string.Events);
+        else
+        return mContext.getString(R.string.publicPlaces);
     }
 
     @Override
     public Fragment getItem(int position) {
         if (position == 0)
             return new AttractionsFragment();
-        else
+        else if (position==1)
             return new RestaurantsFragment();
+        else if(position==2)
+            return new EventsFragment();
+        else
+        return new PublicFragment();
     }
 
     @Override
     public int getCount() {
-        return 2;
+        return 4;
     }
 }

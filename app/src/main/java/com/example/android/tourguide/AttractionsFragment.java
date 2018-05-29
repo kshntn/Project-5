@@ -32,6 +32,9 @@ private String Title;
         View rootView = inflater.inflate(R.layout.details_list, container, false);
         final ArrayList<Details> DetailsList=new ArrayList<>();
         DetailsList.add(new Details("Red Fort","Landmark 17th-century Mughal fortress built in towering red sandstone, now a complex of museums.",R.drawable.redfort));
+        DetailsList.add(new Details("Rashtrapati Bhavan","The official home of the president, located at the Western end of Rajpath in New Delhi",R.drawable.rastrapatibhavan));
+        DetailsList.add(new Details("India Gate","It is a war Memorial located astride the Rajpath on the eastern edge of New Delhi, India,  formerly called Kingsway",R.drawable.indiagate));
+
         DetailsAdapter itemsAdapter = new DetailsAdapter(getActivity(), DetailsList);
 
         ListView listView = rootView.findViewById(R.id.list);
