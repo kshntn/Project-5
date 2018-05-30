@@ -33,9 +33,9 @@ public class EventsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.details_list, container, false);
         final ArrayList<Details> DetailsList = new ArrayList<>();
-        DetailsList.add(new Details("International Food Festival", "To satiate your gustatory cravings,Indian Grill Room brings forth a month long international food festival", R.drawable.foodfestival, "Every Year\n17-18 February", "Jawaharlal Nehru Stadium, Pragati Vihar, New Delhi, Delhi 110003, India"));
+        DetailsList.add(new Details(getString(R.string.foodFestival), getString(R.string.foodFestivalDesc), R.drawable.foodfestival, getString(R.string.foodfestivalTiming), getString(R.string.foodFestivalAddress)));
 
-        DetailsList.add(new Details("International AYUSH Yoga Festival", "To promote the essence of brand India by Global participation in Indian music shows Ayurveda and Holistic healing, spiritual Trust of India, yoga and meditation, cultural and folks showcase", R.drawable.yoga, "Every Year\n20-24 June", "India Gate, Rajpath Marg, India Gate, New Delhi, Delhi 110001, India"));
+        DetailsList.add(new Details(getString(R.string.Yoga), getString(R.string.yogadesc), R.drawable.yoga, getString(R.string.yogatiming), getString(R.string.yogaaddress)));
         DetailsAdapter itemsAdapter = new DetailsAdapter(getActivity(), DetailsList);
 
         ListView listView = rootView.findViewById(R.id.list);

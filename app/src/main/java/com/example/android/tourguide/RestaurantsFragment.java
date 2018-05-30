@@ -35,9 +35,9 @@ public class RestaurantsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.details_list, container, false);
         final ArrayList<Details> DetailsList = new ArrayList<>();
-        DetailsList.add(new Details("The Claridges", "Chic Spanish-themed hotel restaurant with alfresco tables and a Southern Europe and Moroccan menu", R.drawable.claridges, "All Days \n06:00 AM - 11:45 PM", "Suresh Nanda\nMaybourne Hotel Group", "12, Dr APJ Abdul Kalam Road, New Delhi, Delhi 110011, India"));
+        DetailsList.add(new Details(getString(R.string.Claridges), getString(R.string.ClaridgesDesc), R.drawable.claridges, getString(R.string.ClaridgesTiming), getString(R.string.ClaridgesOwners), getString(R.string.ClaridgesAddress)));
 
-        DetailsList.add(new Details("ITC Maurya", "Luxury hotel's Indian restaurant adorned with marble and chandeliers serving handi-cooked fare.", R.drawable.maurya, "Every Day \n12:30 PM - 02:45 PM \n07:00 PM - 11:45 PM", "Yogesh Chander Deveshwar\nITC Hotel Group", "Sardar Patel Marg, Diplomatic Enclave, New Delhi, Delhi 110021, India"));
+        DetailsList.add(new Details(getString(R.string.ITC), getString(R.string.ITCDesc), R.drawable.maurya, getString(R.string.ITCTiming), getString(R.string.ITCOwner), getString(R.string.ITCAddress)));
         DetailsAdapter itemsAdapter = new DetailsAdapter(getActivity(), DetailsList);
 
         ListView listView = rootView.findViewById(R.id.list);

@@ -11,7 +11,7 @@
     <ImageView
         android:id="@+id/headImage"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="@dimen/descriptionHeight"
         android:scaleType="fitXY" />
 
     <TextView
@@ -19,36 +19,36 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/headImage"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
         android:fontFamily="sans-serif-condensed"
-        android:textSize="18sp" />
+        android:textSize="@dimen/text_size" />
 
     <TextView
         android:id="@+id/Owners"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/heading"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/margin"
         android:fontFamily="sans-serif-condensed"
-        android:textSize="18sp" />
+        android:textSize="@dimen/text_size" />
 
     <TextView
         android:id="@+id/address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/Owners"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/margin"
         android:fontFamily="sans-serif-condensed"
-        android:textSize="18sp" />
+        android:textSize="@dimen/text_size" />
 
     <TextView
         android:id="@+id/timing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="16dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin"
         android:textStyle="italic|bold" />
 
 </RelativeLayout>

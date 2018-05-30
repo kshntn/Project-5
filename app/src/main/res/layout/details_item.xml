@@ -8,10 +8,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="16dp"
+        android:layout_marginLeft="@dimen/margin"
         android:layout_toLeftOf="@id/photo"
         android:fontFamily="serif"
-        android:textSize="20dp"
+        android:textSize="@dimen/text_size1"
         android:textStyle="bold|italic" />
 
     <TextView
@@ -21,14 +21,14 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_below="@id/name"
-        android:layout_marginLeft="16dp"
+        android:layout_marginLeft="@dimen/margin"
         android:layout_toLeftOf="@id/photo" />
 
 
     <ImageView
         android:id="@+id/photo"
-        android:layout_width="100dp"
-        android:layout_height="75dp"
+        android:layout_width="@dimen/itemwidth"
+        android:layout_height="@dimen/itemheight"
         android:layout_alignParentRight="true"
         android:adjustViewBounds="true"
         android:scaleType="fitXY" />

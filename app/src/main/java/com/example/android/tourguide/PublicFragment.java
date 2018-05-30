@@ -34,9 +34,9 @@ public class PublicFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.details_list, container, false);
         final ArrayList<Details> DetailsList = new ArrayList<>();
-        DetailsList.add(new Details("Dilli Haat", "Paid entrance open air Food Plaza and craft Bazaar run by Delhi Tourism and Transportation Development Corporation (DTTDC)", R.drawable.dillihaat, "All days of the week  \n10:30 AM - 12:00 AM", "Lal Sai Marg, Virendra Nagar, Near Bharathi College, Janakpuri, Block C, Janakpuri, New Delhi, Delhi 110058, India"));
+        DetailsList.add(new Details(getString(R.string.Dillihaat), getString(R.string.DilliHaatDesc), R.drawable.dillihaat, getString(R.string.DilliHaatTiming), getString(R.string.DilliHaatAddress)));
 
-        DetailsList.add(new Details("National Science Centre", "Pioneering Institute engaged in the popularization of science among the people of the northern part of India in general and among the students in particular", R.drawable.nationalsciencecenter, "All days of the week  \n10:00 AM - 05:30 AM", "Near Gate No.1, Bhairon Road, Pragati Maidan, New Delhi, Delhi 110001, India"));
+        DetailsList.add(new Details(getString(R.string.NSC), getString(R.string.NSCDesc), R.drawable.nationalsciencecenter, getString(R.string.NSCTiming), getString(R.string.NSCAddress)));
         DetailsAdapter itemsAdapter = new DetailsAdapter(getActivity(), DetailsList);
 
         ListView listView = rootView.findViewById(R.id.list);

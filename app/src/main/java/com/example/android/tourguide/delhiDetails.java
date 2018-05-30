@@ -13,7 +13,7 @@ public class delhiDetails extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_delhi_details);
         TextView visit = findViewById(R.id.delhi);
-        setTitle("NEW DELHI");
+        setTitle(getString(R.string.NewDelhi));
         visit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -39,16 +39,16 @@ public class DescriptionActivity extends AppCompatActivity {
         if (flag == 1) {
             TextOwners.setText(getString(R.string.built) + Owners);
         } else if (flag == 2) {
-            TextOwners.setText("Owner: " + Owners);
+            TextOwners.setText(getString(R.string.Owner) + Owners);
         }
         TextAddress = findViewById(R.id.address);
-        TextAddress.setText("Address: " + Address);
+        TextAddress.setText(getString(R.string.addressdisplay) + Address);
         TextDesc = findViewById(R.id.heading);
         TextDesc.setText(Description);
 
 
         TextTime = findViewById(R.id.timing);
-        TextTime.setText("Opening time: " + Time);
+        TextTime.setText(getString(R.string.opening) + Time);
 
     }
 }

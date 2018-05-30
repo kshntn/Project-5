@@ -14,7 +14,7 @@ public class Places extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
-        setTitle("TOURIST SPOTS");
+        setTitle(getString(R.string.Spots));
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
         CategoryAdapter adapter = new CategoryAdapter(this, getSupportFragmentManager());
         viewPager.setAdapter(adapter);

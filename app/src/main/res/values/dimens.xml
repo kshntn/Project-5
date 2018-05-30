@@ -1,3 +1,12 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="DelhiDetailsHeight">150dp</dimen>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="descriptionHeight">200dp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="main_height">125dp</dimen>
+    <dimen name="text_size2">22sp</dimen>
+    <dimen name="text_size1">20sp</dimen>
+    <dimen name="itemwidth">100dp</dimen>
+    <dimen name="itemheight">75dp</dimen>
 </resources>
