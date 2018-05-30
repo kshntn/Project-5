@@ -16,7 +16,7 @@ public class Places extends AppCompatActivity {
         setContentView(R.layout.activity_details);
         setTitle("TOURIST SPOTS");
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
-        CategoryAdapter adapter = new CategoryAdapter(this,getSupportFragmentManager());
+        CategoryAdapter adapter = new CategoryAdapter(this, getSupportFragmentManager());
         viewPager.setAdapter(adapter);
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
 

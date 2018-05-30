@@ -10,7 +10,6 @@
         \n\nLanguages: Hindi,English,Punjabi\nBest time to visit: October to March\nSTD Code: 011-\n</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="Attractions">Attractions</string>
     <string name="Restaurants">Restaurants</string>
     <string name="Events">Events</string>
@@ -18,4 +17,26 @@
     <string name="map"><u>MAP</u></string>
     <string name="visit"><u>VISIT</u></string>
     <string name="title_activity_description">DescriptionActivity</string>
+    <string name="RedFort">Red Fort</string>
+    <string name="rashtrapatiBhavan">Rashtrapati Bhavan</string>
+    <string name="IndiaGate">India Gate</string>
+    <string name="redFortDesc">Landmark of 17th-century Mughal fortress built in towering red sandstone, now a complex of museums.</string>
+    <string name="RedFortTiming">All days of the week except Monday\n09:30 AM - 04:30 PM</string>
+    <string name="RedfortOwner">Shah Jahan\nContructed in 1639</string>
+    <string name="RedFortAddress">Netaji Subhash Marg, Lal Qila, Chandni Chowk, New Delhi, Delhi 110006, India</string>
+    <string name="RastrapatiBhavanDesc">Official home of the president, located at the Western end of Rajpath in New Delhi. One of the largest residencies of head of state in the world.</string>
+    <string name="RastrapatiTiming">All weekdays except public Holidays\n09:30 AM - 05:30 PM</string>
+    <string name="RastrapatiBhavanOwner">Edwin Landseer Lutyens\nConstructed in 1929</string>
+    <string name="RashtrapatiAddress">Rashtrapati Bhawan, President\'s Estate, New Delhi, Delhi 110004, India</string>
+    <string name="IndiaGateDesc">War Memorial located astride the Rajpath on the eastern edge of New Delhi, India,  formerly called Kingsway.</string>
+    <string name="IndiaGateTiming">All days of the week\n05:00 AM - 12:00 AM</string>
+    <string name="IndiaGateOwner">Edwin Lutyens\nConstructed in 1931</string>
+    <string name="IndiaGateAddress">Rajpath Marg, India Gate, New Delhi, Delhi 110001, India</string>
+    <string name="title">title</string>
+    <string name="desc">desc</string>
+    <string name="time">time</string>
+    <string name="flag">flag</string>
+    <string name="Owners">Owners</string>
+    <string name="Address">Address</string>
+    <string name="built">Built by: \ </string>
 </resources>

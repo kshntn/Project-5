@@ -15,15 +15,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TextView visit=findViewById(R.id.delhiVisit);
+        TextView visit = findViewById(R.id.delhiVisit);
         visit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(MainActivity.this,delhiDetails.class);
+                Intent i = new Intent(MainActivity.this, delhiDetails.class);
                 startActivity(i);
             }
         });
-        TextView maps=findViewById(R.id.map);
+        TextView maps = findViewById(R.id.map);
         maps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

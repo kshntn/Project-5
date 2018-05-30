@@ -21,6 +21,8 @@ public class PublicFragment extends Fragment {
     private int ImageId;
     private String Title;
     private String Time;
+    private int flag = 4;
+    private String Address;
 
     public PublicFragment() {
         // Required empty public constructor
@@ -32,9 +34,9 @@ public class PublicFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.details_list, container, false);
         final ArrayList<Details> DetailsList = new ArrayList<>();
-        DetailsList.add(new Details("Dilli Haat", "It is a paid entrance open air Food Plaza and craft Bazaar run by Delhi Tourism and Transportation Development Corporation (DTTDC)", R.drawable.dillihaat));
+        DetailsList.add(new Details("Dilli Haat", "Paid entrance open air Food Plaza and craft Bazaar run by Delhi Tourism and Transportation Development Corporation (DTTDC)", R.drawable.dillihaat, "All days of the week  \n10:30 AM - 12:00 AM", "Lal Sai Marg, Virendra Nagar, Near Bharathi College, Janakpuri, Block C, Janakpuri, New Delhi, Delhi 110058, India"));
 
-        DetailsList.add(new Details("National Science Centre", "It is a pioneering Institute engaged in the popularization of science among the people of the northern part of India in general and among the students in particular", R.drawable.nationalsciencecenter));
+        DetailsList.add(new Details("National Science Centre", "Pioneering Institute engaged in the popularization of science among the people of the northern part of India in general and among the students in particular", R.drawable.nationalsciencecenter, "All days of the week  \n10:00 AM - 05:30 AM", "Near Gate No.1, Bhairon Road, Pragati Maidan, New Delhi, Delhi 110001, India"));
         DetailsAdapter itemsAdapter = new DetailsAdapter(getActivity(), DetailsList);
 
         ListView listView = rootView.findViewById(R.id.list);
@@ -47,12 +49,15 @@ public class PublicFragment extends Fragment {
                 Description = pos.getmDescription();
                 ImageId = pos.getmImageId();
                 Title = pos.getmName();
-                Time=pos.getmTime();
+                Time = pos.getmTime();
+                Address = pos.getmAddress();
                 Intent next = new Intent(getActivity(), DescriptionActivity.class);
-                next.putExtra("title", Title);
-                next.putExtra("desc", Description);
+                next.putExtra(getString(R.string.title), Title);
+                next.putExtra(getString(R.string.desc), Description);
                 next.putExtra("1", ImageId);
-                next.putExtra("time",Time);
+                next.putExtra(getString(R.string.time), Time);
+                next.putExtra(getString(R.string.flag), flag);
+                next.putExtra(getString(R.string.Address), Address);
                 startActivity(next);
             }
         });

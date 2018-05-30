@@ -21,6 +21,7 @@ public class EventsFragment extends Fragment {
     private int ImageId;
     private String Title;
     private String Time;
+    private String Address;
 
     public EventsFragment() {
         // Required empty public constructor
@@ -31,10 +32,10 @@ public class EventsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.details_list, container, false);
-        final ArrayList<Details> DetailsList=new ArrayList<>();
-        DetailsList.add(new Details("International Food Festival","To satiate your gustatory cravings,Indian Grill Room brings forth a month long international food festival",R.drawable.foodfestival));
+        final ArrayList<Details> DetailsList = new ArrayList<>();
+        DetailsList.add(new Details("International Food Festival", "To satiate your gustatory cravings,Indian Grill Room brings forth a month long international food festival", R.drawable.foodfestival, "Every Year\n17-18 February", "Jawaharlal Nehru Stadium, Pragati Vihar, New Delhi, Delhi 110003, India"));
 
-        DetailsList.add(new Details("International AYUSH Yoga Festival","To promote the essence of brand India by Global participation in Indian music shows Ayurveda and Holistic healing, spiritual Trust of India, yoga and meditation, cultural and folks showcase",R.drawable.yoga));
+        DetailsList.add(new Details("International AYUSH Yoga Festival", "To promote the essence of brand India by Global participation in Indian music shows Ayurveda and Holistic healing, spiritual Trust of India, yoga and meditation, cultural and folks showcase", R.drawable.yoga, "Every Year\n20-24 June", "India Gate, Rajpath Marg, India Gate, New Delhi, Delhi 110001, India"));
         DetailsAdapter itemsAdapter = new DetailsAdapter(getActivity(), DetailsList);
 
         ListView listView = rootView.findViewById(R.id.list);
@@ -48,12 +49,14 @@ public class EventsFragment extends Fragment {
                 Description = pos.getmDescription();
                 ImageId = pos.getmImageId();
                 Title = pos.getmName();
-                Time=pos.getmTime();
+                Time = pos.getmTime();
+                Address = pos.getmAddress();
                 Intent next = new Intent(getActivity(), DescriptionActivity.class);
-                next.putExtra("title", Title);
-                next.putExtra("desc", Description);
+                next.putExtra(getString(R.string.title), Title);
+                next.putExtra(getString(R.string.desc), Description);
                 next.putExtra("1", ImageId);
-                next.putExtra("time",Time);
+                next.putExtra(getString(R.string.time), Time);
+                next.putExtra(getString(R.string.Address), Address);
                 startActivity(next);
             }
         });

@@ -12,12 +12,12 @@ public class delhiDetails extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_delhi_details);
-        TextView visit=findViewById(R.id.delhi);
+        TextView visit = findViewById(R.id.delhi);
         setTitle("NEW DELHI");
         visit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(delhiDetails.this,Places.class);
+                Intent i = new Intent(delhiDetails.this, Places.class);
                 startActivity(i);
             }
         });

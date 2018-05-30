@@ -9,14 +9,14 @@
 
     <android.support.design.widget.TabLayout
         android:id="@+id/tabs"
-        android:background="@color/tab_background"
         style="@style/CategoryTab"
-        app:tabSelectedTextColor="@color/tab_textcolor"
         android:layout_width="match_parent"
-        app:tabIndicatorColor="@color/tab_Indicator_color"
         android:layout_height="wrap_content"
+        android:background="@color/tab_background"
+        app:tabIndicatorColor="@color/tab_Indicator_color"
         app:tabMinWidth="0dp"
-        app:tabMode="scrollable" />
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/tab_textcolor" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"

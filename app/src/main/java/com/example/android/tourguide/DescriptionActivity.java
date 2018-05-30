@@ -18,31 +18,37 @@ public class DescriptionActivity extends AppCompatActivity {
     private int flag;
     private String Owners;
     private TextView TextOwners;
+    private String Address;
+    private TextView TextAddress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_description);
-        Description = getIntent().getStringExtra("desc");
-        Title = getIntent().getStringExtra("title");
+        Description = getIntent().getStringExtra(getString(R.string.desc));
+        Title = getIntent().getStringExtra(getString(R.string.title));
         ImageID = getIntent().getIntExtra("1", 0);
-        Time = getIntent().getStringExtra("time");
-        flag = getIntent().getIntExtra("flag", 0);
-        Owners = getIntent().getStringExtra("Owners");
+        Time = getIntent().getStringExtra(getString(R.string.time));
+        flag = getIntent().getIntExtra(getString(R.string.flag), 0);
+        Owners = getIntent().getStringExtra(getString(R.string.Owners));
+        Address = getIntent().getStringExtra(getString(R.string.Address));
         setTitle(Title);
         image = findViewById(R.id.headImage);
         image.setImageResource(ImageID);
-        TextOwners=findViewById(R.id.Owners);
-        if(flag==1){
-            TextOwners.setText("Built by: "+Owners);
-        }else if(flag==2){
-            TextOwners.setText("Owner: "+Owners);
+        TextOwners = findViewById(R.id.Owners);
+        if (flag == 1) {
+            TextOwners.setText(getString(R.string.built) + Owners);
+        } else if (flag == 2) {
+            TextOwners.setText("Owner: " + Owners);
         }
-
+        TextAddress = findViewById(R.id.address);
+        TextAddress.setText("Address: " + Address);
         TextDesc = findViewById(R.id.heading);
         TextDesc.setText(Description);
 
+
         TextTime = findViewById(R.id.timing);
         TextTime.setText("Opening time: " + Time);
+
     }
 }

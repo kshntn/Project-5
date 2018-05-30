@@ -51,21 +51,21 @@
 
                 <TextView
                     android:id="@+id/map"
-                    android:textSize="18dp"
-                    android:layout_marginLeft="16dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:text="@string/map" />
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/map"
+                    android:textSize="18dp" />
 
                 <TextView
-                    android:textSize="18dp"
-                    android:layout_marginRight="16dp"
                     android:id="@+id/delhiVisit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:text="@string/visit" />
+                    android:layout_marginRight="16dp"
+                    android:text="@string/visit"
+                    android:textSize="18dp" />
             </RelativeLayout>
         </LinearLayout>
     </ScrollView>

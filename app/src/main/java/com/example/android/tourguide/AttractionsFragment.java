@@ -22,8 +22,9 @@ public class AttractionsFragment extends Fragment {
     private int ImageId;
     private String Title;
     private String Time;
-    private int flag=1;
+    private int flag = 1;
     private String Owners;
+    private String Address;
 
     public AttractionsFragment() {
         // Required empty public constructor
@@ -35,9 +36,9 @@ public class AttractionsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.details_list, container, false);
         final ArrayList<Details> DetailsList = new ArrayList<>();
-        DetailsList.add(new Details("Red Fort", "Landmark of 17th-century Mughal fortress built in towering red sandstone, now a complex of museums.", R.drawable.redfort, "All days of the week except Monday \n09:30 AM - 04:30 PM","Shah Jahan\nContructed in 1639"));
-        DetailsList.add(new Details("Rashtrapati Bhavan", "The official home of the president, located at the Western end of Rajpath in New Delhi. One of the largest residencies of head of state in the world.", R.drawable.rastrapatibhavan,"All weekdays except public Holidays \n09:30 AM - 05:30 PM","Edwin Landseer Lutyens\nConstructed in 1929"));
-        DetailsList.add(new Details("India Gate", "It is a war Memorial located astride the Rajpath on the eastern edge of New Delhi, India,  formerly called Kingsway.", R.drawable.indiagate,"All days of the week  \n05:00 AM - 12:00 AM","Edwin Lutyens\nConstructed in 1931"));
+        DetailsList.add(new Details(getString(R.string.RedFort), getString(R.string.redFortDesc), R.drawable.redfort, getString(R.string.RedFortTiming), getString(R.string.RedfortOwner), getString(R.string.RedFortAddress)));
+        DetailsList.add(new Details(getString(R.string.rashtrapatiBhavan), getString(R.string.RastrapatiBhavanDesc), R.drawable.rastrapatibhavan, getString(R.string.RastrapatiTiming), getString(R.string.RastrapatiBhavanOwner), getString(R.string.RashtrapatiAddress)));
+        DetailsList.add(new Details(getString(R.string.IndiaGate), getString(R.string.IndiaGateDesc), R.drawable.indiagate, getString(R.string.IndiaGateTiming), getString(R.string.IndiaGateOwner), getString(R.string.IndiaGateAddress)));
 
         DetailsAdapter itemsAdapter = new DetailsAdapter(getActivity(), DetailsList);
 
@@ -51,16 +52,17 @@ public class AttractionsFragment extends Fragment {
                 Description = pos.getmDescription();
                 ImageId = pos.getmImageId();
                 Title = pos.getmName();
-                Time=pos.getmTime();
-                Owners=pos.getmOwners();
+                Time = pos.getmTime();
+                Owners = pos.getmOwners();
+                Address = pos.getmAddress();
                 Intent next = new Intent(getActivity(), DescriptionActivity.class);
-                next.putExtra("title", Title);
-                next.putExtra("desc", Description);
+                next.putExtra(getString(R.string.title), Title);
+                next.putExtra(getString(R.string.desc), Description);
                 next.putExtra("1", ImageId);
-                next.putExtra("time",Time);
-                next.putExtra("flag",flag);
-                next.putExtra("Owners",Owners);
-
+                next.putExtra(getString(R.string.time), Time);
+                next.putExtra(getString(R.string.flag), flag);
+                next.putExtra(getString(R.string.Owners), Owners);
+                next.putExtra(getString(R.string.Address), Address);
                 startActivity(next);
             }
         });

@@ -14,8 +14,8 @@ import java.util.ArrayList;
 
 public class DetailsAdapter extends ArrayAdapter<Details> {
 
-    public DetailsAdapter(Activity context,ArrayList<Details> DetailsList){
-        super(context,0,DetailsList);
+    public DetailsAdapter(Activity context, ArrayList<Details> DetailsList) {
+        super(context, 0, DetailsList);
     }
 
     @NonNull
@@ -25,12 +25,12 @@ public class DetailsAdapter extends ArrayAdapter<Details> {
         if (ListItemView == null) {
             ListItemView = LayoutInflater.from(getContext()).inflate(R.layout.details_item, parent, false);
         }
-        Details current=getItem(position);
-        TextView Name=ListItemView.findViewById(R.id.name);
+        Details current = getItem(position);
+        TextView Name = ListItemView.findViewById(R.id.name);
         Name.setText(current.getmName());
-        TextView Time=ListItemView.findViewById(R.id.time);
+        TextView Time = ListItemView.findViewById(R.id.time);
         Time.setText(current.getmTime());
-        ImageView pic=ListItemView.findViewById(R.id.photo);
+        ImageView pic = ListItemView.findViewById(R.id.photo);
         pic.setImageResource(current.getmImageId());
         return ListItemView;
     }
