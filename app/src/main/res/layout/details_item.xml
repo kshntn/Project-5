@@ -9,6 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="@dimen/margin"
+        android:layout_marginTop="@dimen/half_margin"
         android:layout_toLeftOf="@id/photo"
         android:fontFamily="serif"
         android:textSize="@dimen/text_size1"
@@ -22,8 +23,8 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@id/name"
         android:layout_marginLeft="@dimen/margin"
-        android:layout_toLeftOf="@id/photo" />
-
+        android:layout_toLeftOf="@id/photo"
+        android:paddingBottom="@dimen/half_margin" />
 
     <ImageView
         android:id="@+id/photo"

@@ -8,5 +8,6 @@
     <dimen name="text_size2">22sp</dimen>
     <dimen name="text_size1">20sp</dimen>
     <dimen name="itemwidth">110dp</dimen>
-    <dimen name="itemheight">90dp</dimen>
+    <dimen name="itemheight">100dp</dimen>
+    <dimen name="half_margin">8dp</dimen>
 </resources>
