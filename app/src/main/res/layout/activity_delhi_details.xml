@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/tan_background"
     tools:context=".delhiDetails">
 
     <LinearLayout
@@ -20,7 +21,8 @@
         <me.biubiubiu.justifytext.library.JustifyTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="16dp"
+            android:textStyle="italic"
             android:text="@string/Details" />
 
         <RelativeLayout
@@ -31,6 +33,7 @@
                 android:id="@+id/delhi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
                 android:layout_alignParentRight="true"
                 android:fontFamily="cursive"
                 android:text="Take tour"

@@ -3,15 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/details_background"
+    android:orientation="vertical">
+
     <android.support.design.widget.TabLayout
         android:id="@+id/tabs"
+        android:background="@color/tab_background"
         style="@style/CategoryTab"
+        app:tabSelectedTextColor="@color/tab_textcolor"
         android:layout_width="match_parent"
+        app:tabIndicatorColor="@color/tab_Indicator_color"
         android:layout_height="wrap_content"
         app:tabMinWidth="0dp"
-        app:tabMode="scrollable"/>
+        app:tabMode="scrollable" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"

@@ -28,6 +28,8 @@ public class DetailsAdapter extends ArrayAdapter<Details> {
         Details current=getItem(position);
         TextView Name=ListItemView.findViewById(R.id.name);
         Name.setText(current.getmName());
+        TextView Time=ListItemView.findViewById(R.id.time);
+        Time.setText(current.getmTime());
         ImageView pic=ListItemView.findViewById(R.id.photo);
         pic.setImageResource(current.getmImageId());
         return ListItemView;
