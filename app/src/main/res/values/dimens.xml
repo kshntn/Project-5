@@ -7,6 +7,6 @@
     <dimen name="main_height">125dp</dimen>
     <dimen name="text_size2">22sp</dimen>
     <dimen name="text_size1">20sp</dimen>
-    <dimen name="itemwidth">100dp</dimen>
-    <dimen name="itemheight">75dp</dimen>
+    <dimen name="itemwidth">110dp</dimen>
+    <dimen name="itemheight">90dp</dimen>
 </resources>
