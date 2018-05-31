@@ -1,7 +1,5 @@
 package com.example.android.tourguide;
 
-import android.location.Address;
-
 public class Details {
     private String mName;
     private String mDescription;

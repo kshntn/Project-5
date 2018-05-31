@@ -16,12 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Places"
-            android:parentActivityName=".delhiDetails"/>
-        <activity android:name=".DescriptionActivity"
-            android:parentActivityName=".Places"/>
-        <activity android:name=".delhiDetails"
-            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".Places"
+            android:parentActivityName=".delhiDetails" />
+        <activity
+            android:name=".DescriptionActivity"
+            android:parentActivityName=".Places" />
+        <activity
+            android:name=".delhiDetails"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>
